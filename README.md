@@ -31,5 +31,61 @@ or
 
 ## API
 
-1. add()
+1.  callbacks('unique') 同一个回调只能添加一次
+
+```javascript
+var callbacks = callbacksJs('unique');
+var fn1 = function(){console.log(1)}
+callbacks.add(fn1);
+callbacks.add(fn1);
+callbacks.fire();// 只输出1 没有输出2个1 第二次添加的回调函数没有添加成功
+```
+
+2.  callbacks('once') 回调函数列表只执行一次，后续再调用fire()，回调不执行
+
+```javascript
+var callbacks = callbacksJs('once');
+var fn1 = function(){console.log(1)}
+callbacks.add(fn1);
+callbacks.add(fn1);
+callbacks.fire();// --> 1 1
+callbacks.fire()// -- 没有输出
+```
+
+3.  empty( ) 清空回调函数列表 
+
+```javascript
+var callbacks = callbacksJs('unique');
+var fn1 = function(){console.log(1)}
+callbacks.add(fn1);
+callbacks.fire();// --> 1
+callbacks.empty();
+callbacks.fire();// -- 没有输出
+```
+
+4.  remove(key) 删除指定的回调函数
+
+```javascript
+var callbacks = callbacksJs();
+var fn1 = function(){console.log(1)}
+callbacks.add(fn1);
+callbacks.add(fn1);
+callbacks.fire();// --> 1 1
+callbacks.remove(fn1)
+callbacks.fire()// -- 没有输出
+```
+
+5.  add( ) 添加回调函数
+
+```javascript
+var fn1 = function(){console.log(0)}
+callbacks.add(fn1);
+```
+
+6.  fire( ) 执行回调函数列表
+```javascript
+var fn1 = function(){console.log(0)}
+callbacks.add(fn1);
+callbacks.fire() // --> 0
+```
 
