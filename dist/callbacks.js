@@ -1,4 +1,4 @@
-/*! callbacks.js - v1.0.5 - 2017-12-07
+/*! callbacks.js - v1.0.6 - 2017-12-07
 * https://github.com/simplefeel/callbacks.js
 * Copyright (c) 2017 ; Licensed  */
 
