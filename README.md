@@ -19,5 +19,8 @@ var callbacks = require('callbacks')
 or
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/callbacks.js"></script>
+<script type="text/javascript" src="callbacks.js"></script>
+<script>
+    var callbacks = callbacks();
+</script>
 ```
