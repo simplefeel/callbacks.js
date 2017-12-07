@@ -163,6 +163,8 @@ var callbacks = function callbacks(options) {
     return self;
 };
 
-return callbacks;
+var callbacks$1 = callbacks();
+
+return callbacks$1;
 
 })));
