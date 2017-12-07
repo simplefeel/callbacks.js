@@ -14,7 +14,11 @@ Then with a module bundler like rollup or webpack, use as you would anything els
 import callbacks from 'callbacks'
 
 // using CommonJS modules
-var callbacks = require('callbacks')
+var callbacksJs = require('callbacks');
+var callbacks = callbacksJs('unique');
+var fn1 = function(){console.log(0)}
+callbacks.add(fn1);
+callbacks.fire();//--> 0
 ```
 or
 
@@ -24,3 +28,8 @@ or
     var callbacks = callbacks();
 </script>
 ```
+
+## API
+
+1. add()
+
