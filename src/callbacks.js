@@ -146,4 +146,4 @@
         return self
     }
 
-export default callbacks()
+export default callbacks
