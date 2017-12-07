@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # callbacks.js 
 原生js发布订阅模式的实现，参考jquery的callbacks模块
@@ -22,7 +21,3 @@ or
 ```html
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/callbacks.js"></script>
 ```
-=======
-# callbacks.js 
-原生js发布订阅模式的实现，参考jquery的callbacks模块
->>>>>>> 79276c692c1da1cd82371c5db323ced6956eb389
