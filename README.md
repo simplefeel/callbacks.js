@@ -1,5 +1,5 @@
 
-# callbacks.js 
+# callbacks.js [![Build Status](https://travis-ci.org/ApoorvSaxena/lozad.js.svg?branch=master)](https://travis-ci.org/simplefeel/callbacks.js.svg?branch=master)
 原生js发布订阅模式的实现，参考jquery的callbacks模块
 
 ## Install
