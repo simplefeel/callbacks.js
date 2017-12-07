@@ -1,6 +1,6 @@
 
 # callbacks.js [![Build Status](https://travis-ci.org/ApoorvSaxena/lozad.js.svg?branch=master)](https://travis-ci.org/simplefeel/callbacks.js.svg?branch=master)
-原生js发布订阅模式的实现，参考jquery的callbacks模块
+原生js观察者模式的的实现，主要用来管理回调函数队列，参考jquery的callbacks模块
 
 ## Install
 
